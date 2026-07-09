@@ -37,7 +37,7 @@ export default function PageHero({
           </p>
         )}
         {body && (
-          <p className="max-w-xl font-body text-base leading-relaxed text-parchment/85 sm:text-lg">
+          <p className="max-w-2xl font-body text-base leading-relaxed text-parchment/85 sm:text-lg">
             {body}
           </p>
         )}

@@ -13,7 +13,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "NSBE at Duke",
+  title: "Duke University NSBE",
   description:
     "The Duke University chapter of the National Society of Black Engineers. Chapter info, events, eboard, and member resources.",
 };

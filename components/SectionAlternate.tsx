@@ -18,7 +18,7 @@ export default function SectionAlternate({
   children?: React.ReactNode;
 }) {
   return (
-    <section className={tint ? "bg-mist/50" : ""}>
+    <section className={tint ? "bg-mist/35" : ""}>
       <div className="mx-auto max-w-content px-6 py-24 md:py-32">
         <div
           className={`grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 ${

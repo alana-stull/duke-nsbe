@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -13,6 +15,7 @@ const links = [
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -34,27 +37,43 @@ export default function Nav() {
           scrolled ? "py-4 md:py-5" : "py-5 md:py-8"
         }`}
       >
-        <Link
-          href="/"
-          className={`font-display tracking-tight text-duke-blue transition-all duration-300 ${
-            scrolled ? "text-lg" : "text-lg md:text-xl"
-          }`}
-        >
-          Duke <span className="italic text-brass">NSBE</span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/images/duke-logo.png"
+            alt="Duke University"
+            width={120}
+            height={101}
+            className={`w-auto transition-all duration-300 ${
+              scrolled ? "h-7" : "h-8 md:h-9"
+            }`}
+          />
+          <span className="font-display text-xl font-bold text-duke-blue/40">×</span>
+          <Image
+            src="/images/nsbe-logo.png"
+            alt="NSBE"
+            width={120}
+            height={126}
+            className={`w-auto transition-all duration-300 ${
+              scrolled ? "h-7" : "h-8 md:h-9"
+            }`}
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`font-body text-ink transition-all duration-300 hover:text-duke-blue ${
-                scrolled ? "text-[0.95rem]" : "text-lg"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) => {
+            const active = pathname === l.href;
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`font-body transition-all duration-300 hover:text-duke-blue ${
+                  scrolled ? "text-[0.95rem]" : "text-lg"
+                } ${active ? "font-bold text-duke-blue" : "text-ink"}`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="hidden md:block">
@@ -79,16 +98,21 @@ export default function Nav() {
       {open && (
         <div className="border-t border-duke-blue/10 bg-white p-6 md:hidden">
           <nav className="flex flex-col gap-4">
-            {links.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="font-body text-lg text-ink hover:text-duke-blue"
-              >
-                {l.label}
-              </Link>
-            ))}
+            {links.map((l) => {
+              const active = pathname === l.href;
+              return (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  className={`font-body text-lg hover:text-duke-blue ${
+                    active ? "font-bold text-duke-blue" : "text-ink"
+                  }`}
+                >
+                  {l.label}
+                </Link>
+              );
+            })}
             <Link
               href="/resources"
               onClick={() => setOpen(false)}

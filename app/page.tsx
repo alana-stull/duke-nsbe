@@ -27,7 +27,7 @@ export default function Home() {
           <p className="eyebrow !font-bold text-brass-light">Duke University</p>
           <h1 className="max-w-4xl text-4xl leading-[1.2] sm:text-5xl md:text-6xl md:leading-[1.15]">
             <span className="md:block">Building the next generation of</span>
-            {" "}
+            <span className="md:hidden">{" "}</span>
             <span className="md:block">
               <span className="italic text-brass-light">Black engineers</span>{" "}
               at Duke.
@@ -42,7 +42,7 @@ export default function Home() {
             </Link>
             <Link
               href="/events"
-              className="rounded-pill border border-parchment/40 px-7 py-3 font-body text-sm text-parchment transition-colors duration-300 hover:bg-parchment/10"
+              className="rounded-pill border-2 border-parchment/70 bg-parchment/10 px-7 py-3 font-body text-sm font-bold text-parchment shadow-[0_4px_24px_rgba(0,0,0,0.12)] backdrop-blur-md transition-all duration-300 hover:bg-parchment/20"
             >
               See Events
             </Link>
@@ -58,7 +58,7 @@ export default function Home() {
       />
 
       {/* SPOTLIGHTS */}
-      <section className="bg-mist/50">
+      <section className="bg-mist/35">
         <div className="mx-auto max-w-content px-6 py-24 md:py-32">
           <div className="mb-14 flex items-end justify-between">
             <div>
@@ -92,7 +92,7 @@ export default function Home() {
       </SectionAlternate>
 
       {/* TESTIMONIALS */}
-      <section className="bg-mist/50">
+      <section className="bg-mist/35">
         <div className="mx-auto max-w-content px-6 py-24 md:py-32">
           <div className="mb-14">
             <p className="eyebrow mb-4">In Their Words</p>
