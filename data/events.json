@@ -1,0 +1,38 @@
+[
+  {
+    "title": "General Body Meeting",
+    "date": "2026-09-03",
+    "time": "7:00 PM",
+    "location": "Fitzpatrick Center, Schiciano Auditorium",
+    "category": "GBM",
+    "description": "Kickoff GBM for the fall semester. Meet the eboard, hear the year's plan, and sign up for committees.",
+    "membersOnly": false
+  },
+  {
+    "title": "Resume Workshop with Corporate Partners",
+    "date": "2026-09-17",
+    "time": "6:30 PM",
+    "location": "Wilkinson Building, Room 130",
+    "category": "Professional Development",
+    "description": "Bring a laptop. Recruiters from our corporate partners will review resumes and share what they look for.",
+    "membersOnly": true
+  },
+  {
+    "title": "Fall Regional Info Session",
+    "date": "2026-10-01",
+    "time": "7:00 PM",
+    "location": "Teer Building, Room 203",
+    "category": "Conference Prep",
+    "description": "Everything you need to know about Fall Regional: registration, travel, and what to expect.",
+    "membersOnly": true
+  },
+  {
+    "title": "Pre-College Initiative STEM Day",
+    "date": "2026-10-18",
+    "time": "10:00 AM",
+    "location": "Hudson Hall Atrium",
+    "category": "Community",
+    "description": "Local middle and high schoolers visit campus for hands-on engineering activities led by our members.",
+    "membersOnly": false
+  }
+]

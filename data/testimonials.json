@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Student Name",
+    "major": "Electrical & Computer Engineering",
+    "quote": "NSBE gave me a lab partner list and a family in the same semester.",
+    "photo": ""
+  },
+  {
+    "name": "Student Name",
+    "major": "Biomedical Engineering",
+    "quote": "The mentorship from upperclassmen here is the reason I stayed in engineering.",
+    "photo": ""
+  },
+  {
+    "name": "Student Name",
+    "major": "Mechanical Engineering",
+    "quote": "I walked into my first GBM knowing nobody. I left with a whole cohort.",
+    "photo": ""
+  }
+]

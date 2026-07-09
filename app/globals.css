@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-parchment text-ink font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display font-semibold;
+  }
+  ::selection {
+    background: #022169;
+    color: #F7F4EC;
+  }
+  a {
+    @apply transition-colors duration-300;
+  }
+  :focus-visible {
+    outline: 2px solid #B08D57;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply font-body text-xs font-semibold tracking-[0.12em] uppercase text-brass;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
