@@ -31,13 +31,13 @@ export default function Nav() {
     >
       <div
         className={`mx-auto flex max-w-content items-center justify-between px-6 transition-all duration-300 ${
-          scrolled ? "py-5" : "py-8"
+          scrolled ? "py-4 md:py-5" : "py-5 md:py-8"
         }`}
       >
         <Link
           href="/"
           className={`font-display tracking-tight text-duke-blue transition-all duration-300 ${
-            scrolled ? "text-lg" : "text-xl"
+            scrolled ? "text-lg" : "text-lg md:text-xl"
           }`}
         >
           Duke <span className="italic text-brass">NSBE</span>
@@ -67,7 +67,7 @@ export default function Nav() {
         </div>
 
         <button
-          className="text-duke-blue md:hidden"
+          className="-mr-2 p-2 text-duke-blue md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle navigation"
           aria-expanded={open}

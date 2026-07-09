@@ -23,11 +23,12 @@ export default function Home() {
           className="object-cover object-[center_65%]"
         />
         <div className="absolute inset-0 bg-duke-blue-deep/70" />
-        <div className="relative mx-auto flex max-w-content flex-col items-center gap-8 px-6 py-28 text-center animate-rise md:py-40">
+        <div className="relative mx-auto flex max-w-content flex-col items-center gap-6 px-6 py-20 text-center animate-rise sm:gap-8 sm:py-28 md:py-40">
           <p className="eyebrow !font-bold text-brass-light">Duke University</p>
-          <h1 className="max-w-4xl text-5xl leading-[1.15] md:text-6xl">
-            <span className="block">Building the next generation of</span>
-            <span className="block">
+          <h1 className="max-w-4xl text-4xl leading-[1.2] sm:text-5xl md:text-6xl md:leading-[1.15]">
+            <span className="md:block">Building the next generation of</span>
+            {" "}
+            <span className="md:block">
               <span className="italic text-brass-light">Black engineers</span>{" "}
               at Duke.
             </span>
@@ -109,7 +110,7 @@ export default function Home() {
 
       {/* UPCOMING EVENTS */}
       <section className="mx-auto max-w-content px-6 py-24 md:py-32">
-        <div className="mb-10 flex items-end justify-between">
+        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="eyebrow mb-4">On the Calendar</p>
             <h2 className="text-4xl text-duke-blue md:text-5xl">
@@ -118,7 +119,7 @@ export default function Home() {
           </div>
           <Link
             href="/events"
-            className="hidden font-body text-sm text-duke-blue underline decoration-brass underline-offset-4 md:block"
+            className="font-body text-sm text-duke-blue underline decoration-brass underline-offset-4"
           >
             Full calendar →
           </Link>

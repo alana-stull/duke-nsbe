@@ -30,6 +30,7 @@ export default function ResourcesPage() {
       <PageHero
         eyebrow="Member Resources"
         heading="The stuff you used to have to DM someone for."
+        emphasis="Now it's all in one place."
         image="/images/hero-chapel-day.webp"
       />
 

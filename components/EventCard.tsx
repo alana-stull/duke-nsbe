@@ -29,15 +29,15 @@ export default function EventCard({
   const locked = membersOnly && !signedIn;
 
   return (
-    <div className="flex items-center gap-6 border-b border-duke-blue/10 py-8 first:pt-0">
-      <div className="flex w-16 shrink-0 flex-col items-center">
+    <div className="flex items-center gap-4 border-b border-duke-blue/10 py-8 first:pt-0 sm:gap-6">
+      <div className="flex w-12 shrink-0 flex-col items-center sm:w-16">
         <span className="font-body text-xs tracking-wide text-slate">{month}</span>
-        <span className="font-display text-4xl font-bold text-duke-blue">{day}</span>
+        <span className="font-display text-3xl font-bold text-duke-blue sm:text-4xl">{day}</span>
       </div>
 
-      <div className="flex-1">
+      <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-3">
-          <p className="font-display text-xl text-duke-blue">{title}</p>
+          <p className="font-display text-lg text-duke-blue sm:text-xl">{title}</p>
           <span className="eyebrow rounded-pill border border-brass/40 px-3 py-1 text-[0.65rem]">
             {category}
           </span>

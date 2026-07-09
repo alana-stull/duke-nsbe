@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-parchment/15 py-6 text-center font-body text-xs text-parchment/50">
-        © {new Date().getFullYear()} NSBE at Duke. Not an official Duke University athletics site.
+        © {new Date().getFullYear()} NSBE at Duke.
       </div>
     </footer>
   );
