@@ -42,7 +42,7 @@ export default function EventCard({
             {category}
           </span>
           {membersOnly && (
-            <span className="eyebrow rounded-pill bg-mist px-3 py-1 text-[0.65rem] text-slate">
+            <span className="eyebrow rounded-pill bg-mist px-3 py-1 text-[0.65rem] !text-duke-blue">
               Members Only
             </span>
           )}

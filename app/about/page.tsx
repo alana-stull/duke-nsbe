@@ -41,7 +41,7 @@ export default function AboutPage() {
       </section>
 
       <section>
-        <div className="mx-auto max-w-content px-6 py-24 text-center md:py-32">
+        <div className="mx-auto max-w-content px-6 pt-24 text-center md:pt-32">
           <p className="eyebrow mb-4">How to Join</p>
           <h2 className="mx-auto max-w-2xl text-4xl text-duke-blue md:text-5xl">
             Show up. That&rsquo;s it.

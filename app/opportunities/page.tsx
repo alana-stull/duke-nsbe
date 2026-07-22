@@ -15,13 +15,15 @@ export default function OpportunitiesPage() {
     <>
       <PageHero
         eyebrow="Opportunities"
-        heading="Internships, co-ops, and scholarships, posted by members, for members."
-        body="Every listing here came from a corporate partner, an eboard member, or a fellow student who wanted the chapter to know about it first."
+        heading="Internships, co-ops, and scholarships."
         image="/images/nsbe-story.jpg"
         imagePosition="center"
       />
-
       <div className="mx-auto max-w-content px-6 py-16 md:py-20">
+        <p className="mx-auto mb-10 max-w-2xl text-center font-body text-sm text-slate">
+          Every listing came from a corporate partner, an eboard member, or a
+          fellow student who wanted the chapter to know first.
+        </p>
         <MemberGate>
           <div className="flex flex-col divide-y divide-duke-blue/10">
             {opportunities.map((o) => (

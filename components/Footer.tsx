@@ -1,13 +1,11 @@
 import Link from "next/link";
-import ChapelTorchMark from "./ChapelTorchMark";
 
 export default function Footer() {
   return (
     <footer className="mt-32 bg-duke-blue text-parchment">
       <div className="mx-auto grid max-w-content grid-cols-1 gap-12 px-6 py-20 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
         <div>
-          <ChapelTorchMark className="mb-4 h-16 w-16 text-brass" />
-          <p className="font-display text-xl italic">NSBE at Duke</p>
+          <p className="font-display text-xl italic">Duke NSBE</p>
           <p className="mt-3 max-w-xs font-body text-sm text-parchment/70">
             Duke University&rsquo;s chapter of the National Society of Black
             Engineers, building a family of successful, culturally
@@ -42,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-parchment/15 py-6 text-center font-body text-xs text-parchment/50">
-        © {new Date().getFullYear()} NSBE at Duke.
+        © {new Date().getFullYear()} Duke NSBE.
       </div>
     </footer>
   );
