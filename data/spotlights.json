@@ -10,8 +10,13 @@
     "photo": "/images/alana-stull.jpg"
   },
   {
-    "name": "Student Name",
-    "highlight": "Hardware Engineering Intern at Tesla",
-    "photo": ""
+    "name": "Hillary Ojeikere",
+    "highlight": "Cybersecurity Intern, Children's National Hospital",
+    "photo": "/images/hillary-ojeikere.jpg"
+  },
+  {
+    "name": "Oluwadarasimi Ajiboye",
+    "highlight": "Product Management Intern, ABC Fitness",
+    "photo": "/images/oluwadarasimi-ajiboye.jpg"
   }
 ]
