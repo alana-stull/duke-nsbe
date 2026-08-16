@@ -1,7 +1,5 @@
 # NSBE at Duke — Chapter Website
 
-Next.js 14 + Tailwind + TypeScript. Built for Vercel's free tier.
-
 ## Design system
 
 - **Duke Blue** `#022169` — backgrounds, overlays, primary buttons
