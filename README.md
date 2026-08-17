@@ -1,7 +1,5 @@
 # NSBE at Duke — Chapter Website
 
-Next.js 14 + Tailwind + TypeScript. Built for Vercel's free tier.
-
 ## Design system
 
 - **Duke Blue** `#022169` — backgrounds, overlays, primary buttons
@@ -21,21 +19,14 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Deploy to Vercel (free)
-
-1. Push this folder to a GitHub repo.
-2. Go to vercel.com → New Project → import the repo. Vercel auto-detects Next.js, no config needed.
-3. Buy the domain (president said he'd cover it) through any registrar, then in Vercel: Project → Settings → Domains → add it and follow the DNS instructions.
-
 ## Wiring up real Duke email sign-in
 
-Right now, `components/MemberGate.tsx` is a **visual placeholder** — it accepts any `@duke.edu`-looking address so the eboard can see how gated pages behave. It is not real authentication. Before launch:
+Right now, `components/MemberGate.tsx` is a **visual placeholder** that accepts any `@duke.edu`-looking address so the eboard can see how gated pages behave. It is not real authentication. Before launch:
 
 1. Install NextAuth: `npm install next-auth`
 2. Add an Email (magic link) provider in `app/api/auth/[...nextauth]/route.ts`, restricted to addresses ending in `@duke.edu` via the `signIn` callback.
-3. You'll need an email-sending service for the magic links — Resend or Postmark both have free tiers that cover a chapter's traffic.
-4. Swap `MemberGate`'s local state for NextAuth's `useSession()`, and gate `/opportunities` and `/resources` server-side too (not just client-side) once real credentials are involved, so the data itself isn't fetchable by signed-out visitors.
-5. Duke's IT department may also offer Shibboleth/SSO for student orgs — worth one email to them before building a NetID-restricted email flow from scratch, since it removes the "did you check @duke.edu" question entirely.
+3. Swap `MemberGate`'s local state for NextAuth's `useSession()`, and gate `/opportunities` and `/resources` server-side too (not just client-side) once real credentials are involved, so the data itself isn't fetchable by signed-out visitors.
+4. Duke's IT department may also offer Shibboleth/SSO for student orgs — worth one email to them before building a NetID-restricted email flow from scratch, since it removes the "did you check @duke.edu" question entirely.
 
 ## Structure
 
