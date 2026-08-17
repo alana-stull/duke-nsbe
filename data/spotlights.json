@@ -12,6 +12,13 @@
   {
     "name": "Oluwadarasimi Ajiboye",
     "highlight": "Product Management Intern, ABC Fitness",
-    "photo": "/images/oluwadarasimi-ajiboye.jpg"
+    "photo": "/images/oluwadarasimi-ajiboye.jpg",
+    "focus": "top"
+  },
+  {
+    "name": "Izaiah Williams",
+    "highlight": "2026 NOAA Lapenta Intern",
+    "photo": "/images/izaiah-williams.jpg",
+    "focus": "top"
   }
 ]

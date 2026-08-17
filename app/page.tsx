@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import SectionAlternate from "@/components/SectionAlternate";
-import SpotlightCard from "@/components/SpotlightCard";
-import TestimonialCard from "@/components/TestimonialCard";
+import SpotlightsCarousel from "@/components/SpotlightsCarousel";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import EventCard from "@/components/EventCard";
 import spotlights from "@/data/spotlights.json";
 import testimonials from "@/data/testimonials.json";
@@ -68,11 +68,7 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {spotlights.map((s) => (
-              <SpotlightCard key={s.name} {...s} />
-            ))}
-          </div>
+          <SpotlightsCarousel items={spotlights} />
         </div>
       </section>
 
@@ -100,11 +96,7 @@ export default function Home() {
               Testimonials.
             </h2>
           </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <TestimonialCard key={t.name} {...t} />
-            ))}
-          </div>
+          <TestimonialsCarousel items={testimonials} />
         </div>
       </section>
 
