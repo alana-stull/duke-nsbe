@@ -50,11 +50,13 @@ export default function EventCard({
         <p className="mt-1 font-body text-sm text-slate">
           {time} &middot; {location}
         </p>
-        <p className="mt-3 max-w-xl font-body text-[0.95rem] leading-relaxed text-ink">
-          {locked
-            ? "Sign in with your Duke NetID email to see full event details."
-            : description}
-        </p>
+        {(locked || description) && (
+          <p className="mt-3 max-w-xl font-body text-[0.95rem] leading-relaxed text-ink">
+            {locked
+              ? "Sign in with your Duke NetID email to see full event details."
+              : description}
+          </p>
+        )}
       </div>
     </div>
   );

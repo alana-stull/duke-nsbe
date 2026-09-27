@@ -18,6 +18,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 font-body text-sm text-parchment/80">
             <li><Link href="/about">Who We Are</Link></li>
             <li><Link href="/events">Events</Link></li>
+            <li><Link href="/partner">Partner With Us</Link></li>
           </ul>
         </div>
 
