@@ -10,6 +10,7 @@ const links = [
   { href: "/events", label: "Events" },
   { href: "/opportunities", label: "Opportunities" },
   { href: "/resources", label: "Resources" },
+  { href: "/partner", label: "Partner With Us" },
 ];
 
 export default function Nav() {
